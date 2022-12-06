@@ -61,10 +61,11 @@ app.post('/login', (req, res) => {
 // remove the token from the session storage
 app.post('/logout', (req, res) => {
   // remove the token from the user object
-  const { username } = req.body;
+  console.log(req.body.token);
+  const token = req.body.token;
   const data = fs.readFileSync(path.resolve() + '/collections/users.json');
   const users = JSON.parse(data);
-  const user = users.find(u => u.username === username);
+  const user = users.find(u => u.current_token === token);
   user.current_token = '';
   // update the user in the database
   fs.writeFileSync(path.resolve() + '/collections/users.json', JSON.stringify(users, null, 2));
