@@ -31,17 +31,26 @@ app.use(express.json());
 // if the password is incorrect, return an error
 // if the user does not exist, return an error
 app.post('/login', (req, res) => {
+  function makeid(length) {
+    var result = '';
+    var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var charactersLength = characters.length;
+    for (var i = 0; i < length; i++) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return result;
+  }
   const { username, password } = req.body;
   const data = fs.readFileSync(path.resolve() + '/collections/users.json');
   const users = JSON.parse(data);
   const user = users.find(u => u.username === username);
 
   if (user && user.password === password) {
-    const token = { token: 'fake-jwt-token' };
+    const token = { token: makeid(20) };
     // add the token to the user object
     user.current_token = token.token;
     // update the user in the database
-    fs.writeFileSync(path.resolve() + '/collections/users.json', JSON.stringify(users));
+    fs.writeFileSync(path.resolve() + '/collections/users.json', JSON.stringify(users, null, 2));
     res.json(token);
   } else {
     res.status(400).json({ error: 'Username or password is incorrect' });
@@ -58,7 +67,7 @@ app.post('/logout', (req, res) => {
   const user = users.find(u => u.username === username);
   user.current_token = '';
   // update the user in the database
-  fs.writeFileSync(path.resolve() + '/collections/users.json', JSON.stringify(users));
+  fs.writeFileSync(path.resolve() + '/collections/users.json', JSON.stringify(users, null, 2));
   res.json({ message: 'User logged out' });
 });
 
