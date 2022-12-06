@@ -1,0 +1,202 @@
+[
+    {
+        "id": "1",
+        "title": "Black Panther: Wakanda Forever",
+        "rating": "PG-13",
+        "run_time" : "2h 14m",
+        "genre": "Action, Adventure, Sci-Fi",
+        "release_date": "November 11, 2022",
+        "synopsis": "Queen Ramonda, Shuri, M'Baku, Okoye and the Dora Milaje fight to protect their nation from intervening world powers in the wake of King T'Challa's death. As the Wakandans strive to embrace their next chapter, the heroes must band together with Nakia and Everett Ross to forge a new path for their beloved kingdom.",
+        "poster": "https://www.cinemark.com/media/75998951/lg_bpwf_final.jpg",
+        "IMDB_link": "https://www.imdb.com/title/tt9114286/?ref_=nv_sr_srsg_1",
+        "now_playing": true,
+        "director": "Ryan Coogler",
+        "cast": [
+            "Letitia Wright",
+            "Lupita Nyong'o",
+            "Danai Gurira",
+            "Winston Duke",
+            "Angela Bassett"
+        ]
+    },
+    {
+        "id": "2",
+        "title": "Violent Night",
+        "rating": "R",
+        "run_time" : "1 hr 52 min",
+        "genre": "Holiday, Action, Comedy",
+        "release_date": "December 2, 2022",
+        "synopsis": "An elite team of mercenaries breaks into a family compound on Christmas Eve, taking everyone hostage inside. However, they aren't prepared for a surprise combatant: Santa Claus is on the grounds, and he's about to show why this Nick is no saint.",
+        "poster": "https://www.cinemark.com/media/76000321/large-violent-night-poster.jpg",
+        "IMDB_link": "https://www.imdb.com/title/tt12003946/?ref_=nv_sr_srsg_0",
+        "now_playing": true,
+        "director": "Tommy Wirkola",
+        "cast": [
+            "David Harbour",
+            "John Leguizamo",
+            "Alex Hassell",
+            "Alexis Louder",
+            "Cam Gigandet"
+        ]
+    },
+    {
+        "id": "3",
+        "title": "Strange World",
+        "rating": "PG",
+        "run_time" : "1 hr 42 min",
+        "genre": "Action, Adventure, Animated",
+        "release_date": "November 23, 2022",
+        "synopsis": "An elite team of mercenaries breaks into a family compound on Christmas Eve, taking everyone hostage inside. However, they aren't prepared for a surprise combatant: Santa Claus is on the grounds, and he's about to show why this Nick is no saint.",
+        "poster": "https://www.cinemark.com/media/75998496/lg_sw.jpg",
+        "IMDB_link": "https://www.imdb.com/title/tt10298840/?ref_=nv_sr_srsg_1",
+        "now_playing": true,
+        "director": "Don Hall",
+        "cast": [
+            "Jake Gyllenhaal",
+            "Dennis Quaid",
+            "Jaboukie Young-White",
+            "Gabriel Union",
+            "Lucy Liu"
+        ]
+    },
+    {
+        "id": "4",
+        "title": "Devotion",
+        "rating": "PG-13",
+        "run_time" : "2 hr 19 min",
+        "genre": "War, Historical drama",
+        "release_date": "November 23, 2022",
+        "synopsis": "The inspirational true story of Jesse Brown, the first Black aviator in U.S. Navy history, and his enduring friendship with fellow fighter pilot Tom Hudner. Helping to turn the tide in the most brutal battle in the Korean War, their heroic sacrifices ultimately make them the Navy's most celebrated wingmen.",
+        "poster": "https://www.cinemark.com/media/75996661/lg_devotion.jpg",
+        "IMDB_link": "https://www.imdb.com/title/tt7693316/?ref_=nv_sr_srsg_0",
+        "now_playing": true,
+        "director": "J.D. Dillard",
+        "cast": [
+            "Jonathan Majors",
+            "Glen Powell",
+            "Christina Jackson",
+            "Thomas Sadoski",
+            "Daren Kagasoff"
+        ]
+    },
+    {
+        "id": "5",
+        "title": "The Menu",
+        "rating": "R",
+        "run_time" : "1 hr 47 min",
+        "genre": "Horror, Comedy",
+        "release_date": "November 18, 2022",
+        "synopsis": "Shocking surprises await a couple when they travel to a coastal island to sample a chef's lavish menu at an exclusive restaurant.",
+        "poster": "https://www.cinemark.com/media/75998827/lg_payoff_the_menu.jpg",
+        "IMDB_link": "https://www.imdb.com/title/tt9764362/?ref_=nv_sr_srsg_0",
+        "now_playing": true,
+        "director": "Mark Mylod",
+        "cast": [
+            "Ralph Fiennes",
+            "Anya Taylor-Joy",
+            "Nicholas Hoult",
+            "Hong Chau",
+            "AJanet McTeer"
+        ]
+    },
+    {
+        "id": "6",
+        "title": "Avatar: The Way of Water",
+        "rating": "PG-13",
+        "run_time" : "3 hr 10 min",
+        "genre": " Action/Adventure,  Sci-Fi/Fantasy",
+        "release_date": "December 16, 2022",
+        "synopsis": "Set more than a decade after the events of the first film, “Avatar The Way of Water” begins to tell the story of the Sully family (Jake, Neytiri and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive and the tragedies they endure.",
+        "poster": "https://www.cinemark.com/media/76000280/large-avatar-the-way-of-water-poster.jpg",
+        "IMDB_link": "https://www.imdb.com/title/tt1630029/?ref_=nv_sr_srsg_1",
+        "now_playing": false,
+        "director": "James Cameron",
+        "cast": [
+            "Zoe Saldana",
+            "Sam Worthington",
+            "Kate Winslet",
+            "Sigourney Weaver",
+            "Stephen Lang"
+        ]
+    },
+    {
+        "id": "7",
+        "title": "Puss in Boots: The Last Wish",
+        "rating": "PG",
+        "run_time" : "1 hr 42 min",
+        "genre": "Action/Adventure,  Animated",
+        "release_date": "December 21, 2022",
+        "synopsis": "Puss in Boots discovers that his passion for peril and disregard for safety have taken their toll. Puss has burned through eight of his nine lives, though he lost count along the way. Getting those lives back will send Puss in Boots on his grandest quest yet. ",
+        "poster": "https://www.cinemark.com/media/75994440/lg_pib.jpg",
+        "IMDB_link": "https://www.imdb.com/title/tt3915174/?ref_=nv_sr_srsg_0",
+        "now_playing": false,
+        "director": "Joel Crawford",
+        "cast": [
+            "Antonio Banderas",
+            "Salma Hayek",
+            "Harvey Guillén",
+            "Florence Pugh",
+            "John Mulaney"
+        ]
+    },
+    {
+        "id": "8",
+        "title": "I Wanna Dance With Somebody",
+        "rating": "PG-13",
+        "run_time" : "2 hr 24 min",
+        "genre": "Biography, Drama, Music",
+        "release_date": "December 23, 2022",
+        "synopsis": "I Wanna Dance with Somebody is a powerful and triumphant celebration of the incomparable Whitney Houston. Directed by Kasi Lemmons, written by Academy Award® nominee Anthony McCarten, produced by legendary music executive Clive Davis and starring BAFTA Award® winner Naomi Ackie, the film is a no-holds-barred portrait of the complex and multifaceted woman behind The Voice. From New Jersey choir girl to one of the best-selling and most awarded recording artists of all time, audiences are taken on an inspirational, poignant—and so emotional—journey through Houston’s trailblazing life and career, with show-stopping performances and a soundtrack of the icon’s most beloved hits as you’ve never heard them before. Don’t you wanna dance?",
+        "poster": "https://www.cinemark.com/media/75998221/lg_iwdws.jpg",
+        "IMDB_link": "https://www.imdb.com/title/tt12193804/?ref_=fn_al_tt_1",
+        "now_playing": false,
+        "director": "Kasi Lemmons",
+        "cast": [
+            "Stanley Tucci",
+            "Naomi Ackie",
+            "Ashton Sanders",
+            "Tamara Tunie",
+            "Clarke Peters"
+        ]
+    },
+    {
+        "id": "9",
+        "title": "The Old Way",
+        "rating": "R",
+        "run_time" : "1 hr 35 min",
+        "genre": "Action/Adventure",
+        "release_date": "January 6, 2023",
+        "synopsis": "Academy Award® winner* Nicolas Cage stars in his first-ever Western as Colton Briggs, a cold-blooded gunslinger turned respectable family man. When an outlaw and his gang put Colton and his family in peril, Colton is forced to take up arms with an unlikely partner — his 12-year-old daughter (Ryan Kiera Armstrong) — in this action-filled film that builds toward its fateful showdown with pulse-pounding suspense.",
+        "poster": "https://images.fandango.com/ImageRenderer/820/0/redesign/static/img/default_poster.png/0/images/masterrepository/fandango/230506/OldWay_rated.jpg",
+        "IMDB_link": "https://www.imdb.com/title/tt8593824/?ref_=nv_sr_srsg_0",
+        "now_playing": false,
+        "director": "Brett Donowho",
+        "cast": [
+            "Nicolas Cage",
+            "Clint Howard",
+            "Abraham Benrubi",
+            "Kerry Knuppe",
+            "Ryan Kiera Armstrong"
+        ]
+    },
+    {
+        "id": "10",
+        "title": "Lullaby ",
+        "rating": "R",
+        "run_time" : "1 hr 29 min",
+        "genre": "Horror",
+        "release_date": "December 16, 2022",
+        "synopsis": "A new mother (Oona Chaplin) discovers a lullaby in an ancient book and regards the song as a blessing. But her world transforms into a nightmare when the lullaby brings forth the ancient demon Lilith.",
+        "poster": "https://images.fandango.com/ImageRenderer/820/0/redesign/static/img/default_poster.png/0/images/masterrepository/fandango/230128/LULLABY-FINAL-ART-Cropped.jpg",
+        "IMDB_link": "https://www.imdb.com/title/tt11891246/?ref_=nv_sr_srsg_0",
+        "now_playing": false,
+        "director": "John R. Leonetti",
+        "cast": [
+            "Oona Chaplin",
+            "Ramón Rodríguez",
+            "Kira Guloien",
+            "Liane Balaban",
+            "Moni Ogunsuyi"
+        ]
+    }
+]

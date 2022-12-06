@@ -1,0 +1,395 @@
+[
+    {
+        "id": "1",
+        "name": "Lubbock Theater",
+        "show_times": [
+            {
+                "movie_id": "1",
+                "show_time": "12:00 PM"
+            },
+            {
+                "movie_id": "1",
+                "show_time": "3:00 PM"
+            },
+            {
+                "movie_id": "1",
+                "show_time": "6:00 PM"
+            },
+            {
+                "movie_id": "1",
+                "show_time": "9:00 PM"
+            },
+            {
+                "movie_id": "2",
+                "show_time": "3:00 PM"
+            },
+            {
+                "movie_id": "2",
+                "show_time": "6:00 PM"
+            },
+            {
+                "movie_id": "2",
+                "show_time": "9:00 PM"
+            },
+            {
+                "movie_id": "3",
+                "show_time": "3:00 PM"
+            },
+            {
+                "movie_id": "3",
+                "show_time": "6:00 PM"
+            },
+            {
+                "movie_id": "4",
+                "show_time": "3:00 PM"
+            },
+            {
+                "movie_id": "4",
+                "show_time": "6:00 PM"
+            },
+            {
+                "movie_id": "4",
+                "show_time": "9:00 PM"
+            },
+            {
+                "movie_id": "4",
+                "show_time": "12:00 PM"
+            },
+            {
+                "movie_id": "5",
+                "show_time": "3:00 PM"
+            },
+            {
+                "movie_id": "5",
+                "show_time": "6:00 PM"
+            },
+            {
+                "movie_id": "5",
+                "show_time": "9:00 PM"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "name": "Amarillo Theater",
+        "show_times": [
+            {
+                "movie_id": "1",
+                "show_time": "12:00 PM"
+            },
+            {
+                "movie_id": "1",
+                "show_time": "3:00 PM"
+            },
+            {
+                "movie_id": "1",
+                "show_time": "6:00 PM"
+            },
+            {
+                "movie_id": "1",
+                "show_time": "9:00 PM"
+            },
+            {
+                "movie_id": "2",
+                "show_time": "3:00 PM"
+            },
+            {
+                "movie_id": "2",
+                "show_time": "6:00 PM"
+            },
+            {
+                "movie_id": "2",
+                "show_time": "9:00 PM"
+            },
+            {
+                "movie_id": "3",
+                "show_time": "3:00 PM"
+            },
+            {
+                "movie_id": "3",
+                "show_time": "6:00 PM"
+            },
+            {
+                "movie_id": "4",
+                "show_time": "3:00 PM"
+            },
+            {
+                "movie_id": "4",
+                "show_time": "6:00 PM"
+            },
+            {
+                "movie_id": "4",
+                "show_time": "9:00 PM"
+            },
+            {
+                "movie_id": "4",
+                "show_time": "12:00 PM"
+            },
+            {
+                "movie_id": "5",
+                "show_time": "3:00 PM"
+            },
+            {
+                "movie_id": "5",
+                "show_time": "6:00 PM"
+            },
+            {
+                "movie_id": "5",
+                "show_time": "9:00 PM"
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "name": "Levelland Theater",
+        "show_times": [
+            {
+                "movie_id": "1",
+                "show_time": "12:00 PM"
+            },
+            {
+                "movie_id": "1",
+                "show_time": "3:00 PM"
+            },
+            {
+                "movie_id": "1",
+                "show_time": "6:00 PM"
+            },
+            {
+                "movie_id": "1",
+                "show_time": "9:00 PM"
+            },
+            {
+                "movie_id": "2",
+                "show_time": "3:00 PM"
+            },
+            {
+                "movie_id": "2",
+                "show_time": "6:00 PM"
+            },
+            {
+                "movie_id": "2",
+                "show_time": "9:00 PM"
+            },
+            {
+                "movie_id": "3",
+                "show_time": "3:00 PM"
+            },
+            {
+                "movie_id": "3",
+                "show_time": "6:00 PM"
+            },
+            {
+                "movie_id": "4",
+                "show_time": "3:00 PM"
+            },
+            {
+                "movie_id": "4",
+                "show_time": "9:00 PM"
+            },
+            {
+                "movie_id": "4",
+                "show_time": "12:00 PM"
+            },
+            {
+                "movie_id": "5",
+                "show_time": "3:00 PM"
+            },
+            {
+                "movie_id": "5",
+                "show_time": "6:00 PM"
+            },
+            {
+                "movie_id": "5",
+                "show_time": "9:00 PM"
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "name": "Plainview Theater",
+        "show_times": [
+            
+            {
+                "movie_id": "1",
+                "show_time": "6:00 PM"
+            },
+            {
+                "movie_id": "1",
+                "show_time": "9:00 PM"
+            },
+            {
+                "movie_id": "2",
+                "show_time": "3:00 PM"
+            },
+            {
+                "movie_id": "2",
+                "show_time": "6:00 PM"
+            },
+            {
+                "movie_id": "2",
+                "show_time": "9:00 PM"
+            },
+            {
+                "movie_id": "3",
+                "show_time": "3:00 PM"
+            },
+            {
+                "movie_id": "3",
+                "show_time": "6:00 PM"
+            },
+            {
+                "movie_id": "4",
+                "show_time": "3:00 PM"
+            },
+            {
+                "movie_id": "4",
+                "show_time": "6:00 PM"
+            },
+            {
+                "movie_id": "4",
+                "show_time": "9:00 PM"
+            },
+            {
+                "movie_id": "4",
+                "show_time": "12:00 PM"
+            },
+            {
+                "movie_id": "5",
+                "show_time": "3:00 PM"
+            },
+            {
+                "movie_id": "5",
+                "show_time": "6:00 PM"
+            },
+            {
+                "movie_id": "5",
+                "show_time": "9:00 PM"
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "name": "Snyder Theater",
+        "show_times": [
+            {
+                "movie_id": "1",
+                "show_time": "12:00 PM"
+            },
+            {
+                "movie_id": "1",
+                "show_time": "3:00 PM"
+            },
+            {
+                "movie_id": "1",
+                "show_time": "6:00 PM"
+            },
+            {
+                "movie_id": "1",
+                "show_time": "9:00 PM"
+            },
+            {
+                "movie_id": "2",
+                "show_time": "3:00 PM"
+            },
+            {
+                "movie_id": "2",
+                "show_time": "6:00 PM"
+            },
+            {
+                "movie_id": "2",
+                "show_time": "9:00 PM"
+            },
+            {
+                "movie_id": "3",
+                "show_time": "3:00 PM"
+            },
+            {
+                "movie_id": "3",
+                "show_time": "6:00 PM"
+            },
+            {
+                "movie_id": "4",
+                "show_time": "3:00 PM"
+            },
+            {
+                "movie_id": "4",
+                "show_time": "6:00 PM"
+            },
+            {
+                "movie_id": "5",
+                "show_time": "3:00 PM"
+            },
+            {
+                "movie_id": "5",
+                "show_time": "6:00 PM"
+            },
+            {
+                "movie_id": "5",
+                "show_time": "9:00 PM"
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "name": "Abilene Theater",
+        "show_times": [
+            {
+                "movie_id": "1",
+                "show_time": "12:00 PM"
+            },
+            {
+                "movie_id": "1",
+                "show_time": "3:00 PM"
+            },
+            {
+                "movie_id": "1",
+                "show_time": "6:00 PM"
+            },
+            {
+                "movie_id": "1",
+                "show_time": "9:00 PM"
+            },
+            {
+                "movie_id": "2",
+                "show_time": "3:00 PM"
+            },
+            {
+                "movie_id": "2",
+                "show_time": "6:00 PM"
+            },
+            {
+                "movie_id": "3",
+                "show_time": "6:00 PM"
+            },
+            {
+                "movie_id": "4",
+                "show_time": "3:00 PM"
+            },
+            {
+                "movie_id": "4",
+                "show_time": "6:00 PM"
+            },
+            {
+                "movie_id": "4",
+                "show_time": "9:00 PM"
+            },
+            {
+                "movie_id": "4",
+                "show_time": "12:00 PM"
+            },
+            {
+                "movie_id": "5",
+                "show_time": "3:00 PM"
+            },
+            {
+                "movie_id": "5",
+                "show_time": "6:00 PM"
+            },
+            {
+                "movie_id": "5",
+                "show_time": "9:00 PM"
+            }
+        ]
+    }
+]
