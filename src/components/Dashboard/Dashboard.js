@@ -3,7 +3,8 @@ import { Route, useNavigate, Link, Routes } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 
-export default function Dashboard() {
+export default function Dashboard({ props }) {
+  console.log(sessionStorage.getItem('token'));
   const navigate = useNavigate();
   const [movies, setMovies] = React.useState([]);
   function redirectToReview(movie) {

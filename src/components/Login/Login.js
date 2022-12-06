@@ -1,17 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, } from 'react';
+import { Route, useNavigate, Link, Routes } from "react-router-dom";
 import PropTypes from 'prop-types';
 import './Login.css';
 import { Row } from 'react-bootstrap';
 
 async function loginUser(credentials) {
-  return fetch('http://localhost:8080/login', {
+  const response = await fetch('http://localhost:8080/login', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify(credentials)
   })
-    .then(data => data.json())
+    .then(data => {
+      console.log(data);
+      return data;
+    })
+  console.log(response.status, response.ok);
+  if (response.ok) {
+    console.log("Login successful");
+    return response.json();
+  }
+  else {
+    alert("Login failed");
+    console.log("Login failed");
+    return null;
+  }
 }
 
 export default function Login({ setToken }) {
@@ -24,8 +38,12 @@ export default function Login({ setToken }) {
       username,
       password
     });
-    setToken(token);
+    if (token) {
+      setToken(token);
+    }
   }
+
+
 
   return (
     <div className='login-wrapper'>

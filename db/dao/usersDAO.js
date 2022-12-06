@@ -23,7 +23,11 @@ export default class UsersDAO {
     }
     static async persistUsers(users) {
         const usersPath = path.join(process.cwd(), 'collections', 'users.json');
-        fs.writeFileSync(usersPath, JSON.stringify(users));
+        fs.writeFileSync(usersPath, JSON.stringify(users, null, 2));
+    }
+    static async getUserByCurrentToken(token) {
+        const users = await this.getUsers();
+        return users.filter(user => user.currentToken === token);
     }
 
 

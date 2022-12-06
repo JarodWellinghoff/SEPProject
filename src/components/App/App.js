@@ -8,12 +8,30 @@ import Reviews from '../Pages/Review.js';
 import BookTicket from '../Pages/BookTickets.js';
 import CCForm from '../Pages/CCForm.js';
 import TicketCode from '../Pages/TicketCode.js';
+import useToken from './useToken.js';
+
 
 function App() {
-  const [token, setToken] = useState();
+  const { token, setToken } = useToken();
+  const [user, setUser] = useState();
 
   if (!token) {
     return <Login setToken={setToken} />
+  }
+
+  const welcomeMessage = () => {
+    fetch('http://localhost:8080/users/' + token.token)
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        setUser(data);
+      });
+
+    return (
+      <div>
+        <h1>Welcome {user?.name}</h1>
+      </div>
+    )
   }
 
   return (
@@ -21,7 +39,8 @@ function App() {
       <div>
         <Navbar bg="#404040">
           <img src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fclipartcraft.com%2Fimages%2Ftexas-tech-logo-clip-art-7.png&f=1&nofb=1&ipt=313196dfce193458ddcd6eb445ae00644965ae5f58e5d06d96ee0658555c76cc&ipo=images' height='75' width='75'></img>
-          <text style={{ color: 'white', fontSize: 40, paddingRight: '1050px' }}>Movie Booking System</text>
+          <text style={{ color: 'white', fontSize: 40, paddingRight: '900px' }}>Movie Booking System</text>
+          {welcomeMessage()}
           <form class="form-inline">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
           </form>

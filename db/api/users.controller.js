@@ -60,4 +60,14 @@ export default class UsersController {
             res.status(500).json({ error: e });
         }
     }
+
+    static async apiGetUserByCurrentToken(req, res, next) {
+        try {
+            let token = req.params.token;
+            let user = await UsersDAO.getUserByCurrentToken(token);
+            res.json({ user: user });
+        } catch (e) {
+            res.status(500).json({ error: e });
+        }
+    }
 }

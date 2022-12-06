@@ -150,5 +150,29 @@
     "theater": "Lubbock Theater",
     "showtime": "3:00 PM",
     "seat": "1"
+  },
+  {
+    "id": "3hZ4h7aZD0xwyHGOrEZB",
+    "user_name": "admin",
+    "movie_title": "Black Panther: Wakanda Forever",
+    "theater": "Amarillo Theater",
+    "showtime": "3:00 PM",
+    "seat": "2"
+  },
+  {
+    "id": "56cSL5WWp3dGlFOhR0Js",
+    "user_name": "admin",
+    "movie_title": "Black Panther: Wakanda Forever",
+    "theater": "Amarillo Theater",
+    "showtime": "3:00 PM",
+    "seat": "2"
+  },
+  {
+    "id": "vBtSYVJrdskgCZ0gQVNc",
+    "user_name": "admin",
+    "movie_title": "Black Panther: Wakanda Forever",
+    "theater": "Amarillo Theater",
+    "showtime": "3:00 PM",
+    "seat": "2"
   }
 ]

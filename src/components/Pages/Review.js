@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 
 export default function Reviews() {
+  console.log(sessionStorage.getItem('token'));
   const navigate = useNavigate();
   const { state } = useLocation();
   const selectedMovie = state.movie;
