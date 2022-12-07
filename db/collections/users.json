@@ -1,6 +1,6 @@
 [
   {
-    "current_token": "BEY0Vr3MK60Wy2rA1gLq",
+    "current_token": "FiK1BD3r4JTfPSNjUSBx",
     "id": "1",
     "name": "admin",
     "username": "admin",
@@ -8,10 +8,10 @@
     "email": "admin@gmail.com",
     "phone": "1234567890",
     "address": "admin address",
-    "adimin": true
+    "admin": true
   },
   {
-    "current_token": "sCmiQr9ch1gP5DfMwHHl",
+    "current_token": "",
     "id": "2",
     "username": "user",
     "name": "user",
@@ -19,7 +19,7 @@
     "email": "example1@gmail.com",
     "phone": "1234567890",
     "address": "user address",
-    "adimin": false
+    "admin": false
   },
   {
     "current_token": "",
@@ -30,7 +30,7 @@
     "email": "example2@gmail.com",
     "phone": "1234567890",
     "address": "user1 address",
-    "adimin": false
+    "admin": false
   },
   {
     "current_token": "",
@@ -41,7 +41,7 @@
     "email": "example3@gmail.com",
     "phone": "1234567890",
     "address": "user2 address",
-    "adimin": false
+    "admin": false
   },
   {
     "id": "3O3He9BcMi3YZkBJqnBngiHGrOBHm2tRVKeozhgM",

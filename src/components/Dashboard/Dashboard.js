@@ -4,9 +4,10 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 
 export default function Dashboard({ props }) {
-  console.log(sessionStorage.getItem('token'));
   const navigate = useNavigate();
   const [movies, setMovies] = React.useState([]);
+  const [userStatus, setUserStatus] = React.useState(false);
+
   function redirectToReview(movie) {
     //Redirect to the python page
     navigate("../Pages/Reviews",
@@ -30,8 +31,34 @@ export default function Dashboard({ props }) {
     console.log(data);
     setMovies(data);
   };
+
+  // fetch user info on page load and check if user is admin
+  const fetchUser = async () => {
+    const tokenString = sessionStorage.getItem('token');
+    const tokenObj = JSON.parse(tokenString);
+    const response = await fetch('http://localhost:8080/users/token/' + tokenObj.token);
+    const data = await response.json();
+    const user = data.user;
+    setUserStatus(user.admin);
+  };
+
+  const displayAdminButton = () => {
+    console.log(userStatus);
+    if (userStatus) {
+      return (
+        <Button style={{ width: '120px' }} variant="secondary"
+          onClick={() => redirectToAdmin()}
+        >
+          Admin
+        </Button>
+      );
+    }
+  }
+
+
   useEffect(() => {
     fetchMovies();
+    fetchUser();
   }, []);
 
 
@@ -42,11 +69,7 @@ export default function Dashboard({ props }) {
   return (
     <div style={{ backgroundColor: 'gray', height: '700px' }}>
       <h2 style={{ textAlign: 'center', color: 'white' }}>Currently showing</h2>
-      <Button style={{ width: '100px'}}variant='secondary'
-      onClick={() => redirectToAdmin(movies)}
-      >
-        Admin
-      </Button>
+      {displayAdminButton()}
       <table style={{}}>
         <thead>
           {

@@ -31,8 +31,8 @@ export default function AdminDashboard() {
   return (
     <div style={{ backgroundColor: 'gray', height: '700px' }}>
       <h2 style={{ textAlign: 'center', color: 'white' }}>Currently showing</h2>
-      <Button style={{ width: '100px'}}variant='secondary'
-      onClick={() => redirectToDashboard()}
+      <Button style={{ width: '100px' }} variant='secondary'
+        onClick={() => redirectToDashboard()}
       >
         User
       </Button>
@@ -60,7 +60,7 @@ export default function AdminDashboard() {
           }
         </thead>
       </table>
-      <div style={{ paddingLeft: '20px', paddingTop: '50px'}}>
+      <div style={{ paddingLeft: '20px', paddingTop: '50px' }}>
         <h3 style={{ color: 'white' }}>Tickets Sold: "seat state here"</h3>
       </div>
     </div>
