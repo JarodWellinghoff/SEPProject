@@ -26,8 +26,9 @@ export default class UsersDAO {
         fs.writeFileSync(usersPath, JSON.stringify(users, null, 2));
     }
     static async getUserByCurrentToken(token) {
-        console.log(token);
         const users = await this.getUsers();
-        return users.filter(user => user.current_token === token);
+        const found_user = users.filter(user => user.current_token === token);
+        console.log(found_user[0]);
+        return found_user[0];
     }
 }

@@ -15,9 +15,9 @@ export default class TicketsController {
         try {
             const ticket = {
                 id: TicketsController.makeid(20),
-                user_name: req.body.name,
-                movie_title: req.body.movie_title,
-                theater: req.body.theater,
+                user_id: req.body.user_id,
+                movie_id: req.body.movie_id,
+                theater_id: req.body.theater_id,
                 showtime: req.body.showtime,
                 seat: req.body.seat,
             };

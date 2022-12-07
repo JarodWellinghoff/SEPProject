@@ -5,10 +5,10 @@ import { QRCodeCanvas } from 'qrcode.react';
 
 export default function TicketCode() {
     const navigate = useNavigate();
+    const token = sessionStorage.getItem('token');
     const { state } = useLocation();
     const [qrCode, setQRCode] = React.useState(null);
     console.log(state);
-    const theater = state.theater;
     const movie = state.movie;
     const showtime = state.showtime;
     const seat = state.seat;
@@ -16,15 +16,30 @@ export default function TicketCode() {
 
     // add ticket to db
     const addTicket = async () => {
+        const th = await fetch('http://localhost:8080/theaters');
+        const th_data = await th.json();
+        console.log(th_data);
+        const theaters = th_data;
+        const theater = theaters.find(theater => theater.name === state.theater);
+
+
+        // get user from token
+        const obj = JSON.parse(token);
+        const user_response = await fetch(`http://localhost:8080/users/token/${obj.token}`);
+        const user_data = await user_response.json();
+        const user_id = user_data.user.id;
+        console.log(user_data.user.id);
+        console.log(theater);
+
         const response = await fetch("http://localhost:8080/tickets/add", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                name: card.name_on_card,
-                theater: theater,
-                movie_title: movie.title,
+                user_id: user_id,
+                theater_id: theater.id,
+                movie_id: movie.id,
                 showtime: showtime,
                 seat: seat
             }),
@@ -32,7 +47,7 @@ export default function TicketCode() {
         const data = await response.json();
         const ticket_id = data.id;
         setQRCode(ticket_id);
-        console.log(data);
+        // console.log(data);
     };
     useEffect(() => {
         addTicket();
@@ -49,7 +64,7 @@ export default function TicketCode() {
             </Row>
             <Row>
                 <h2 style={{ color: 'white' }}>
-                    {theater} - {movie.title} - {showtime} - {seat} - {card.name_on_card}
+                    {state.theater} - {movie.title} - {showtime} - {seat} - {card.name_on_card}
                 </h2>
             </Row>
             <Row><QRCodeCanvas
