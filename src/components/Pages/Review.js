@@ -7,9 +7,11 @@ export default function Reviews() {
   console.log(sessionStorage.getItem('token'));
   const navigate = useNavigate();
   const { state } = useLocation();
+  const token = sessionStorage.getItem('token');
   const selectedMovie = state.movie;
   const [reviews, setReviews] = React.useState([]);
   const [users, setUsers] = React.useState([]);
+  const [user, setUser] = React.useState({});
 
   function redirectToTickets(movie) {
     //Redirect to the python page
@@ -37,9 +39,22 @@ export default function Reviews() {
     console.log(reviews);
     setReviews(reviews);
   };
+
+  // fetch the user by token
+  const fetchUser = async () => {
+    const tokenObj = JSON.parse(token);
+    // console.log(tokenObj.token);
+    const response = await fetch('http://localhost:8080/users/token/' + tokenObj.token);
+    const data = await response.json()
+      .then(data => {
+        setUser(data.user);
+      })
+  };
+
   useEffect(() => {
     fetchReviews();
     fetchUsers();
+    fetchUser();
   }, []);
 
   const handleSubmit = async e => {
@@ -49,8 +64,9 @@ export default function Reviews() {
     if (text[0].value === '') {
       return;
     }
+    console.log('asdfasdf' + user);
     const review = {
-      user_id: "1",
+      user_id: user.id,
       movie_id: selectedMovie.id,
       text: text[0].value,
       date: new Date()

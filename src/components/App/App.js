@@ -37,7 +37,7 @@ function App() {
     });
 
     sessionStorage.removeItem('token');
-    window.location.reload();
+    window.location.href = '/dashboard';
   }
 
 

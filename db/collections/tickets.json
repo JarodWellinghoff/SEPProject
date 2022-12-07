@@ -22,5 +22,21 @@
     "theater_id": "2",
     "showtime": "6:00 PM",
     "seat": "8"
+  },
+  {
+    "id": "oKP3Y28Py8XMLJtPYxVl",
+    "user_id": "P9Sst9Xs5cyNi2JCTirCBrYpd5lbDTR8b4eL4F40",
+    "movie_id": "2",
+    "theater_id": "6",
+    "showtime": "3:00 PM",
+    "seat": "5"
+  },
+  {
+    "id": "TZclqEWm3BrP2J01LrAu",
+    "user_id": "2",
+    "movie_id": "2",
+    "theater_id": "6",
+    "showtime": "6:00 PM",
+    "seat": "2"
   }
 ]

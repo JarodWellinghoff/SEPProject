@@ -95,6 +95,7 @@ export default function Login({ setToken }) {
       if (response.ok) {
         alert("Signup successful");
         setCurrentStatus('login');
+        window.location.reload();
       }
       else {
         alert("Signup failed");
