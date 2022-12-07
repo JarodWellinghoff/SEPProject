@@ -7,6 +7,12 @@ export default function AdminDashboard() {
   const navigate = useNavigate();
   const [movies, setMovies] = React.useState([]);
 
+  function redirectToReview(movie) {
+    //Redirect to the python page
+    navigate("../Pages/AdminMovieDetails",
+      { state: { movie: movie } });
+  };
+
   function redirectToDashboard(movies) {
     //Redirect to the python page
     navigate("../Dashboard",
@@ -48,7 +54,7 @@ export default function AdminDashboard() {
                         <img src={movie.poster} height='200' width='135' alt=''></img>
                       </Row>
                       <Row>
-                        <Button style={{ width: '120px' }} variant="secondary">
+                        <Button onClick={() => redirectToReview(movie)} style={{ width: '120px' }} variant="secondary">
                           Edit Movie
                         </Button>
                       </Row>

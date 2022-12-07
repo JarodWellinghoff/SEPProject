@@ -72,13 +72,6 @@ export default function Login({ setToken }) {
       </div>
     )
   } else {
-    // allow a user to register a new account
-    // if the user already exists, display an error message
-    // the user should be able to go back to the login page
-    // the user can enter a username, password, their name, their email address, their home address, and their phone number
-    // add a checkbox to indicate whether they are an admin or not
-    // if signup is successful, display a message and go back to the login page
-    // if signup is unsuccessful, display an error message
     const handleSubmit = async e => {
       e.preventDefault();
       const text = e.target.elements;

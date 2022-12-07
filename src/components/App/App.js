@@ -11,6 +11,7 @@ import TicketCode from '../Pages/TicketCode.js';
 import BoughtTickets from '../Pages/BoughtTickets.js';
 import useToken from './useToken.js';
 import AdminDashboard from '../Pages/AdminDashboard.js';
+import AdminMovieDetails from '../Pages/AdminMovieDetails.js';
 
 
 function App() {
@@ -44,8 +45,10 @@ function App() {
     <div style={{ backgroundColor: '#404040', width: '1920px', height: '920px' }} className='wrapper'>
       <div>
         <Navbar bg="#404040">
-          <img src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fclipartcraft.com%2Fimages%2Ftexas-tech-logo-clip-art-7.png&f=1&nofb=1&ipt=313196dfce193458ddcd6eb445ae00644965ae5f58e5d06d96ee0658555c76cc&ipo=images' height='75' width='75'></img>
-          <text style={{ color: 'white', fontSize: 40, paddingRight: '850px' }}>Movie Booking System</text>
+          <img onClick={() => { window.location.href = '/dashboard' }}
+            src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fclipartcraft.com%2Fimages%2Ftexas-tech-logo-clip-art-7.png&f=1&nofb=1&ipt=313196dfce193458ddcd6eb445ae00644965ae5f58e5d06d96ee0658555c76cc&ipo=images' height='75' width='75'></img>
+          <text onClick={() => { window.location.href = '/dashboard' }}
+            style={{ color: 'white', fontSize: 40, paddingRight: '850px' }}>Movie Booking System</text>
           <form class="form-inline">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
           </form>
@@ -65,6 +68,7 @@ function App() {
           <Route path='/CCForm' element={<CCForm />} />
           <Route path='/Pages/TicketCode' element={<TicketCode />} />
           <Route path='/Pages/AdminDashboard' element={<AdminDashboard />} />
+          <Route path='/Pages/AdminMovieDetails' element={<AdminMovieDetails />} />
         </Routes>
       </BrowserRouter>
     </div>
