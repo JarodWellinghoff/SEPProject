@@ -1,6 +1,15 @@
 import UsersDAO from "../dao/usersDAO.js";
 
 export default class UsersController {
+    static makeid(length) {
+        var result = '';
+        var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        var charactersLength = characters.length;
+        for (var i = 0; i < length; i++) {
+            result += characters.charAt(Math.floor(Math.random() * charactersLength));
+        }
+        return result;
+    }
     static async apiGetUsers(req, res, next) {
         try {
             let users = await UsersDAO.getUsers();
@@ -31,19 +40,34 @@ export default class UsersController {
     }
 
     static async apiAddUser(req, res, next) {
+        // check if username already exists
+        let users = await UsersDAO.getUsers();
+        for (let i = 0; i < users.length; i++) {
+            if (users[i].username === req.body.user.username) {
+                res.status(401).json({ error: "Username already exists" });
+                return;
+            }
+        }
+        console.log(req.body.user);
         try {
-            let name = req.body.name;
-            let email = req.body.email;
-            let password = req.body.password;
-            let date_of_birth = req.body.date_of_birth;
-            let favorite_movies = req.body.favorite_movies;
-            let user = await UsersDAO.addUser(
-                name,
-                email,
-                password,
-                date_of_birth,
-                favorite_movies,
-            );
+            let name = req.body.user.name;
+            let email = req.body.user.email;
+            let password = req.body.user.password;
+            let username = req.body.user.username;
+            let address = req.body.user.address;
+            let phone = req.body.user.phone;
+            let admin = req.body.user.admin;
+            let new_user = {
+                id: UsersController.makeid(40),
+                name: name,
+                email: email,
+                password: password,
+                username: username,
+                address: address,
+                phone: phone,
+                admin: admin,
+            };
+            let user = await UsersDAO.addUser(new_user);
             res.json({ user: user });
         } catch (e) {
             res.status(500).json({ error: e });

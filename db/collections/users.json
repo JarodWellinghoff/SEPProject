@@ -11,7 +11,7 @@
     "adimin": true
   },
   {
-    "current_token": "ppYE9AsH6phMiPV8MXaA",
+    "current_token": "sCmiQr9ch1gP5DfMwHHl",
     "id": "2",
     "username": "user",
     "name": "user",
@@ -42,5 +42,15 @@
     "phone": "1234567890",
     "address": "user2 address",
     "adimin": false
+  },
+  {
+    "id": "3O3He9BcMi3YZkBJqnBngiHGrOBHm2tRVKeozhgM",
+    "name": "asdf",
+    "email": "asdf",
+    "password": "user",
+    "username": "userss",
+    "address": "afda",
+    "phone": "asdf",
+    "admin": false
   }
 ]
