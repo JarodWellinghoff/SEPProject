@@ -10,6 +10,7 @@ import CCForm from '../Pages/CCForm.js';
 import TicketCode from '../Pages/TicketCode.js';
 import BoughtTickets from '../Pages/BoughtTickets.js';
 import useToken from './useToken.js';
+import AdminDashboard from '../Pages/AdminDashboard.js';
 
 
 function App() {
@@ -63,6 +64,7 @@ function App() {
           <Route path='/Pages/BookTickets' element={<BookTicket />} />
           <Route path='/CCForm' element={<CCForm />} />
           <Route path='/Pages/TicketCode' element={<TicketCode />} />
+          <Route path='/Pages/AdminDashboard' element={<AdminDashboard />} />
         </Routes>
       </BrowserRouter>
     </div>

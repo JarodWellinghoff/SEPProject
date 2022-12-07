@@ -18,6 +18,12 @@ export default function Dashboard({ props }) {
       { state: { movie: movie } }
     );
   };
+  function redirectToAdmin(movie) {
+    //Redirect to the python page
+    navigate("../Pages/AdminDashboard",
+      { state: { movie: movie } }
+    );
+  };
   const fetchMovies = async () => {
     const response = await fetch('http://localhost:8080/movies');
     const data = await response.json();
@@ -36,6 +42,11 @@ export default function Dashboard({ props }) {
   return (
     <div style={{ backgroundColor: 'gray', height: '700px' }}>
       <h2 style={{ textAlign: 'center', color: 'white' }}>Currently showing</h2>
+      <Button style={{ width: '100px'}}variant='secondary'
+      onClick={() => redirectToAdmin(movies)}
+      >
+        Admin
+      </Button>
       <table style={{}}>
         <thead>
           {

@@ -14,5 +14,13 @@
     "theater_id": "3",
     "showtime": "12:00 PM",
     "seat": "1"
+  },
+  {
+    "id": "NBfDIZhNffXECEGlGkAw",
+    "user_id": "1",
+    "movie_id": "2",
+    "theater_id": "2",
+    "showtime": "6:00 PM",
+    "seat": "8"
   }
 ]
